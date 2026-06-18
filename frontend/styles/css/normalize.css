@@ -32,16 +32,6 @@ main {
   display: block;
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
    ========================================================================== */
 
@@ -75,6 +65,7 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -162,10 +153,12 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  border: none;
+
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /**
@@ -348,4 +341,8 @@ template {
 
 [hidden] {
   display: none;
+}
+
+ul {
+  list-style-type: none;
 }

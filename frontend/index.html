@@ -3,16 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/css/style.css" />
-    <link rel="stylesheet" href="styles/css/normailze.css" />
+    <link rel="stylesheet" href="./styles/css/style.css" />
+    <link rel="stylesheet" href="./styles/css/normalize.css" />
+    <link rel="stylesheet" href="./styles/css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>Aqua med</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header__inner container">
         <div class="header__top">
           <div class="logo">
-            <img src="#" alt="green logotype" />
+            <img
+              width="52"
+              height="52"
+              src="assets/logo.png"
+              alt="green logotype"
+            />
             <h1>
               <span class="sitename">АкваМед</span>
               <span class="slogan">Клиника капельниц</span>
@@ -22,7 +33,7 @@
             <ul class="info__list">
               <li class="info__item">
                 <div class="adress">
-                  <img src="#" alt="adress" />
+                  <img src="./assets/icons/geo.svg" alt="adress" />
                   <div class="adress__inner">
                     <span class="label">Адрес</span>
                     <a href="https://yandex.ru/maps/-/CPxonMiz" class="content"
@@ -33,10 +44,13 @@
               </li>
               <li class="info__item">
                 <div class="phone">
-                  <img src="#" alt="phone" />
+                  <img src="./assets/icons/phone.svg" alt="phone" />
                   <div class="phone__inner">
                     <span class="label">Поддержка 24/7</span>
-                    <a href="tel:+78008899999" class="content"
+                    <a
+                      style="white-space: nowrap"
+                      href="tel:+78008899999"
+                      class="content"
                       >+7 (800) 889-99-99</a
                     >
                   </div>
@@ -44,7 +58,7 @@
               </li>
               <li class="info__item">
                 <div class="schedule">
-                  <img src="#" alt="schedule" />
+                  <img src="./assets/icons/time.svg" alt="schedule" />
                   <div class="schedule__inner">
                     <span class="label">Время работы</span>
                     <span class="content">Круглосуточно</span>
@@ -56,26 +70,40 @@
 
           <div class="right-block">
             <button class="btn clean">
-              <img src="#" alt="eye" />
-            </button>
-            <button class="btn secondary">
-              <img src="#" alt="search" />
+              <img src="./assets/icons/eye.svg" alt="eye" />
             </button>
             <div class="social">
               <ul class="social__list">
                 <li class="social__item">
+                  <button class="btn secondary">
+                    <img src="./assets/icons/search.svg" alt="search" />
+                  </button>
+                </li>
+                <li class="social__item">
                   <a href="#" class="btn secondary">
-                    <img src="#" alt="vk" />
+                    <img
+                      src="./assets/icons/social/vk.svg"
+                      alt="vk"
+                      class="img-vk"
+                    />
                   </a>
                 </li>
                 <li class="social__item">
                   <a href="#" class="btn secondary">
-                    <img src="#" alt="telegram" />
+                    <img
+                      class="img-telegram"
+                      src="./assets/icons/social/telegram.svg"
+                      alt="telegram"
+                    />
                   </a>
                 </li>
                 <li class="social__item">
                   <a href="#" class="btn secondary">
-                    <img src="#" alt="ok" />
+                    <img
+                      class="img-ok"
+                      src="./assets/icons/social/ok.svg"
+                      alt="ok"
+                    />
                   </a>
                 </li>
               </ul>
@@ -86,10 +114,13 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="btn secondary">Услуги</a>
+                <a href="#" class="btn secondary active">Услуги</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="btn secondary">О клинике</a>
+                <button class="btn secondary dropdown">
+                  <span>О клинике</span>
+                  <img src="./assets/icons/arrow_down.svg" alt="arrow down" />
+                </button>
               </li>
               <li class="nav__item">
                 <a href="#" class="btn secondary">Цены</a>
@@ -108,83 +139,108 @@
           <div class="actions">
             <button class="btn secondary">Записаться</button>
             <button class="btn primary">Капельница на дому</button>
+            <button class="btn secondary burger">
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </div>
       </div>
     </header>
     <main>
       <section class="intro">
-        <img class="background" src="#" alt="background" />
         <div class="container">
           <div class="intro__inner">
-            <div class="intro__content">
-              <h2 class="intro__title">
-                Клиника капельниц АкваМед <strong>в Санкт-Петербурге</strong>
-              </h2>
-              <span class="intro__description"
-                >Инфузионные программы под контролем врачей: детокс, энергия,
-                красота и поддержка иммунитета</span
-              >
-              <div class="actions">
-                <button class="btn bordered">В клинике</button>
-                <button class="btn bordered">На дому</button>
-              </div>
-              <div class="intro__cards">
-                <ul class="card__list">
-                  <li class="card__item">
-                    <div class="card">
-                      <img class="card__illustration" src="#" alt="droplet" />
-                      <span class="card__label">Капельница</span>
-                      <h4 class="card__title">Детокс</h4>
-                      <p class="card__description">
-                        очищение организма после алкоголя и нагрузок
-                      </p>
-                      <div class="card__price">
-                        <span>Цена:</span>
-                        <span>от 5 000₽</span>
-                      </div>
-                      <a href="#" class="btn secondary">Подробнее</a>
-                    </div>
-                  </li>
-                  <li class="card__item">
-                    <div class="card">
-                      <img class="card__illustration" src="#" alt="droplet" />
-                      <span class="card__label">Капельница</span>
-                      <h4 class="card__title">Энергия</h4>
-                      <p class="card__description">
-                        быстрое восстановление сил и тонуса
-                      </p>
-                      <div class="card__price">
-                        <span>Цена:</span>
-                        <span>от 5 500₽</span>
-                      </div>
-                      <a href="#" class="btn secondary">Подробнее</a>
-                    </div>
-                  </li>
-                  <li class="card__item">
-                    <div class="card">
-                      <img class="card__illustration" src="#" alt="droplet" />
-                      <span class="card__label">Капельница</span>
-                      <h4 class="card__title">Золушка</h4>
-                      <p class="card__description">сияние кожи, свежий вид</p>
-                      <div class="card__price">
-                        <span>Цена:</span>
-                        <span>от 5 900₽</span>
-                      </div>
-                      <a href="#" class="btn secondary">Подробнее</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="actions">
-                <button class="btn primary">Подобрать капельницу</button>
-                <button class="btn secondary">Бесплатная консультация</button>
-              </div>
+            <h2 class="intro__title">
+              Клиника капельниц АкваМед
+              <strong>в Санкт&shy;Петербурге</strong>
+            </h2>
+            <span class="intro__description"
+              >Инфузионные программы под контролем врачей: детокс, энергия,
+              красота и поддержка иммунитета</span
+            >
+            <div class="actions">
+              <button class="btn bordered">В клинике</button>
+              <button class="btn bordered">На дому</button>
             </div>
-            <div class="intro__illustration">
-              <img src="#" alt="doctor" />
+            <div class="intro__cards">
+              <ul class="card__list">
+                <li class="card__item">
+                  <div class="card">
+                    <img
+                      class="card__illustration"
+                      src="./assets/img/green_droplet.png"
+                      alt="droplet"
+                    />
+                    <span class="card__label">Капельница</span>
+                    <h4 class="card__title">Детокс</h4>
+                    <div class="card__description">
+                      <p>очищение организма после алкоголя и нагрузок</p>
+                    </div>
+                    <div class="card__price">
+                      <span>Цена:</span>
+                      <span>от 5 000 ₽</span>
+                    </div>
+                    <a href="#" class="btn secondary">Подробнее</a>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <div class="card">
+                    <img
+                      class="card__illustration"
+                      src="./assets/img/blue-green_droplet.png"
+                      alt="droplet"
+                    />
+                    <span class="card__label">Капельница</span>
+                    <h4 class="card__title">Энергия</h4>
+                    <div class="card__description">
+                      <p>быстрое восстановление сил и тонуса</p>
+                    </div>
+                    <div class="card__price">
+                      <span>Цена:</span>
+                      <span>от 5 500 ₽</span>
+                    </div>
+                    <a href="#" class="btn secondary">Подробнее</a>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <div class="card">
+                    <img
+                      class="card__illustration"
+                      src="./assets/img/blue_droplet.png"
+                      alt="droplet"
+                    />
+                    <span class="card__label">Капельница</span>
+                    <h4 class="card__title">Золушка</h4>
+                    <div class="card__description">
+                      <p>сияние кожи, свежий вид</p>
+                    </div>
+                    <div class="card__price">
+                      <span>Цена:</span>
+                      <span>от 5 900 ₽</span>
+                    </div>
+                    <a href="#" class="btn secondary">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="bottom-actions">
+              <button class="btn primary">Подобрать капельницу</button>
+              <button class="btn secondary">Бесплатная консультация</button>
             </div>
           </div>
+        </div>
+        <div class="illustations">
+          <img
+            class="background"
+            src="./assets/img/bg/bg_medium.png"
+            alt="background"
+          />
+          <img
+            class="img-wooman"
+            src="./assets/img/peoples/wooman1.png"
+            alt="doctor"
+          />
         </div>
       </section>
       <section class="info">
@@ -192,18 +248,23 @@
           <div class="info__inner">
             <h2 class="info__title">Что даёт инфузионная терапия?</h2>
             <div class="info__content">
-              <img class="info__illustration" src="#" alt="illustration" />
+              <img
+                class="info__illustration"
+                src="./assets/img/dropper.png"
+                alt="illustration"
+              />
               <div class="info__cards">
                 <ul class="card__list">
                   <li class="card__item">
                     <div class="card">
                       <img
                         class="card__illustration"
-                        src="#"
+                        src="./assets/icons/energy.svg"
                         alt="illustration"
                       />
                       <span class="card__description"
-                        >Эффект уже после первой процедуры</span
+                        >Эффект уже после <br />
+                        первой процедуры</span
                       >
                     </div>
                   </li>
@@ -211,7 +272,7 @@
                     <div class="card">
                       <img
                         class="card__illustration"
-                        src="#"
+                        src="./assets/icons/time_interval.svg"
                         alt="illustration"
                       />
                       <span class="card__description"
@@ -223,11 +284,12 @@
                     <div class="card">
                       <img
                         class="card__illustration"
-                        src="#"
+                        src="./assets/icons/droplet.svg"
                         alt="illustration"
                       />
                       <span class="card__description"
-                        >100% усвоение — витамины и препараты минуют ЖКТ</span
+                        >100% усвоение — витамины <br />
+                        и препараты минуют ЖКТ</span
                       >
                     </div>
                   </li>
@@ -235,11 +297,12 @@
                     <div class="card">
                       <img
                         class="card__illustration"
-                        src="#"
+                        src="./assets/icons/user_lotos.svg"
                         alt="illustration"
                       />
                       <span class="card__description"
-                        >Без нагрузки на желудок и печень</span
+                        >Без нагрузки на желудок <br />
+                        и печень</span
                       >
                     </div>
                   </li>
@@ -250,7 +313,6 @@
         </div>
       </section>
       <section class="callback">
-        <img class="background" src="#" alt="background" />
         <div class="callback__inner container">
           <div class="callback__content">
             <h2 class="callback__title">
@@ -269,17 +331,32 @@
                 type="submit"
                 value="Отправить заявку"
               />
-              <label>
-                <input type="checkbox" /> Нажимая кнопку я соглашаюсь с
-                <a href="#"
-                  >политикой конфединциальности и пользовательским
-                  соглашением</a
-                >
+              <label class="checkbox">
+                <input type="checkbox" />
+                <div class="checkbox__border">
+                  <span class="checkbox__custom"></span>
+                </div>
+                <span class="checkbox__text">
+                  Нажимая кнопку я соглашаюсь с
+                  <a href="#"
+                    >политикой конфединциальности и пользовательским
+                    соглашением</a
+                  >
+                </span>
               </label>
             </form>
           </div>
           <div class="callback__illustration">
-            <img src="#" alt="illustration" />
+            <img
+              class="background"
+              src="./assets/img/bg/bg_large.png"
+              alt="background"
+            />
+            <img
+              class="img-wooman"
+              src="./assets/img/peoples/wooman2.png"
+              alt="illustration"
+            />
           </div>
         </div>
       </section>
@@ -311,7 +388,9 @@
                     возможностях модели развития. Однозначно, предприниматели в
                     сети интернет своевременно верифицированы.
                   </p>
-                  <p>Наше дело не так однозначно, как может показаться:</p>
+                  <p class="l-title">
+                    Наше дело не так однозначно, как может показаться:
+                  </p>
                   <ul>
                     <li>
                       информационно-пропагандистское обеспечение нашей
@@ -329,16 +408,18 @@
                     <li>определяющее значение для вывода текущих активов</li>
                   </ul>
                   <div class="quote">
-                    <img src="#" alt="illustration" />
-                    <p>
-                      Ясность нашей позиции очевидна: курс на
-                      социально-ориентированный национальный проект однозначно
-                      фиксирует необходимость дальнейших направлений развития. В
-                      своём стремлении повысить качество жизни, они забывают,
-                      что социально-экономическое развитие в значительной
-                      степени обусловливает важность экономической
-                      целесообразности принимаемых решений.
-                    </p>
+                    <div class="quote-block">
+                      <img src="./assets/icons/energy.svg" alt="illustration" />
+                      <p>
+                        Ясность нашей позиции очевидна: курс на
+                        социально-ориентированный национальный проект однозначно
+                        фиксирует необходимость дальнейших направлений развития.
+                        В своём стремлении повысить качество жизни, они
+                        забывают, что социально-экономическое развитие в
+                        значительной степени обусловливает важность
+                        экономической целесообразности принимаемых решений.
+                      </p>
+                    </div>
                   </div>
                   <p>
                     Приятно, граждане, наблюдать, как многие известные личности
@@ -350,7 +431,7 @@
                     качества экспериментов, поражающих по своей масштабности и
                     грандиозности.
                   </p>
-                  <p>
+                  <p class="l-title">
                     Разнообразный и богатый опыт говорит нам, что курс на
                     социально-ориентированный национальный проект:
                   </p>
@@ -384,7 +465,10 @@
                   </p>
                 </div>
                 <div class="illustrations">
-                  <img src="#" alt="illustration" />
+                  <img
+                    src="./assets/img/peoples/hands.png"
+                    alt="illustration"
+                  />
                 </div>
               </div>
               <h3>Текстовый блок H3</h3>
@@ -411,31 +495,42 @@
                     возможностях модели развития. Однозначно, предприниматели в
                     сети интернет своевременно верифицированы.
                   </p>
-                  <div class="quote">
-                    <img src="#" alt="illustration" />
-                    <p>
-                      Ясность нашей позиции очевидна: курс на
-                      социально-ориентированный национальный проект однозначно
-                      фиксирует необходимость дальнейших направлений развития. В
-                      своём стремлении повысить качество жизни, они забывают,
-                      что социально-экономическое развитие в значительной
-                      степени обусловливает важность экономической
-                      целесообразности принимаемых решений.
-                    </p>
+                  <div class="quote margined">
+                    <div class="quote-block">
+                      <img src="./assets/icons/quote.svg" alt="illustration" />
+                      <p>
+                        Ясность нашей позиции очевидна: курс на
+                        социально-ориентированный национальный проект однозначно
+                        фиксирует необходимость дальнейших направлений развития.
+                        В своём стремлении повысить качество жизни, они
+                        забывают, что социально-экономическое развитие в
+                        значительной степени обусловливает важность
+                        экономической целесообразности принимаемых решений.
+                      </p>
+                    </div>
                     <div class="divider"></div>
-                    <div class="person">
-                      <img class="person__avatar" src="#" alt="avatar" />
-                      <div class="person__data">
-                        <h5 class="person__name">
+                    <div class="author">
+                      <img
+                        class="author__avatar"
+                        src="./assets/img/peoples/mini_wooman1.png"
+                        alt="avatar"
+                      />
+                      <div class="author__data">
+                        <h5 class="author__name">
                           Константинопольский Константин Константинович
                         </h5>
-                        <span class="person__position"
+                        <span class="author__position"
                           >Главный врач клиники, психиатр-нарколог</span
                         >
-                        <span class="person__experience"
+                        <span class="author__experience"
                           >Опыт работы: 13 лет</span
                         >
                       </div>
+                      <img
+                        class="background"
+                        src="./assets/img/bg/bg_small.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                   <p>
@@ -448,7 +543,11 @@
                   </p>
                 </div>
                 <div class="illustrations">
-                  <img src="#" alt="illustration" />
+                  <img
+                    class="mobile-hide"
+                    src="./assets/img/peoples/client_and_doctor.png"
+                    alt="illustration"
+                  />
                 </div>
               </div>
             </div>
@@ -472,10 +571,115 @@
                 ООО «Кристалл» Л041-01148-78/00347913
               </p>
             </div>
-            <!-- slider actions -->
+            <div class="slider-actions">
+              <button class="slider-btn slider-btn-prev">
+                <img src="./assets/icons/arrow-left.svg" alt="arrow left" />
+              </button>
+              <div class="slider-pagination"></div>
+              <button class="slider-btn slider-btn-next">
+                <img
+                  style="transform: rotate(180deg)"
+                  src="./assets/icons/arrow-left.svg"
+                  alt="arrow right"
+                />
+              </button>
+            </div>
           </div>
+
           <div class="licenses__slider">
-            <!--slider-->
+            <div class="swiper licensesSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="license-slide">
+                    <img
+                      src="./assets/img/licenses/license1.png"
+                      alt="Лицензия 6"
+                    />
+                    <div class="badge">
+                      <p>
+                        Приятно, граждане, наблюдать, как многие известные
+                        личности своевременно верифицированы
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="license-slide">
+                    <img
+                      src="./assets/img/licenses/license1.png"
+                      alt="Лицензия 6"
+                    />
+                    <div class="badge">
+                      <p>
+                        Приятно, граждане, наблюдать, как многие известные
+                        личности своевременно верифицированы
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="license-slide">
+                    <img
+                      src="./assets/img/licenses/license1.png"
+                      alt="Лицензия 6"
+                    />
+                    <div class="badge">
+                      <p>
+                        Приятно, граждане, наблюдать, как многие известные
+                        личности своевременно верифицированы
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="license-slide">
+                    <img
+                      src="./assets/img/licenses/license1.png"
+                      alt="Лицензия 6"
+                    />
+                    <div class="badge">
+                      <p>
+                        Приятно, граждане, наблюдать, как многие известные
+                        личности своевременно верифицированы
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="license-slide">
+                    <img
+                      src="./assets/img/licenses/license1.png"
+                      alt="Лицензия 6"
+                    />
+                    <div class="badge">
+                      <p>
+                        Приятно, граждане, наблюдать, как многие известные
+                        личности своевременно верифицированы
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="license-slide">
+                    <img
+                      src="./assets/img/licenses/license1.png"
+                      alt="Лицензия 6"
+                    />
+                    <div class="badge">
+                      <p>
+                        Приятно, граждане, наблюдать, как многие известные
+                        личности своевременно верифицированы
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -494,7 +698,7 @@
                       >
                       <button class="btn secondary">+</button>
                     </div>
-                    <div class="accardion-content">
+                    <div class="accardion__content">
                       <p>
                         Клиника работает на основании медицинской лицензии и
                         всех необходимых разрешений. Работаем с пациентами на
@@ -503,16 +707,20 @@
                         здоровья.
                       </p>
                       <div class="divider"></div>
-                      <div class="person">
-                        <img class="person__avatar" src="#" alt="avatar" />
-                        <div class="person__data">
-                          <h5 class="person__name">
+                      <div class="author">
+                        <img
+                          class="author__avatar"
+                          src="./assets/img/peoples/mini_wooman1.png"
+                          alt="avatar"
+                        />
+                        <div class="author__data">
+                          <h5 class="author__name">
                             Константинопольский Константин Константинович
                           </h5>
-                          <span class="person__position"
+                          <span class="author__position"
                             >Главный врач клиники, психиатр-нарколог</span
                           >
-                          <span class="person__experience"
+                          <span class="author__experience"
                             >Опыт работы: 13 лет</span
                           >
                         </div>
@@ -529,7 +737,7 @@
                       >
                       <button class="btn secondary">+</button>
                     </div>
-                    <div class="accardion-content">
+                    <div class="accardion__content">
                       <p>
                         Клиника работает на основании медицинской лицензии и
                         всех необходимых разрешений. Работаем с пациентами на
@@ -538,16 +746,20 @@
                         здоровья.
                       </p>
                       <div class="divider"></div>
-                      <div class="person">
-                        <img class="person__avatar" src="#" alt="avatar" />
-                        <div class="person__data">
-                          <h5 class="person__name">
+                      <div class="author">
+                        <img
+                          class="author__avatar"
+                          src="./assets/img/peoples/mini_wooman1.png"
+                          alt="avatar"
+                        />
+                        <div class="author__data">
+                          <h5 class="author__name">
                             Константинопольский Константин Константинович
                           </h5>
-                          <span class="person__position"
+                          <span class="author__position"
                             >Главный врач клиники, психиатр-нарколог</span
                           >
-                          <span class="person__experience"
+                          <span class="author__experience"
                             >Опыт работы: 13 лет</span
                           >
                         </div>
@@ -564,7 +776,7 @@
                       >
                       <button class="btn secondary">+</button>
                     </div>
-                    <div class="accardion-content">
+                    <div class="accardion__content">
                       <p>
                         Клиника работает на основании медицинской лицензии и
                         всех необходимых разрешений. Работаем с пациентами на
@@ -573,16 +785,20 @@
                         здоровья.
                       </p>
                       <div class="divider"></div>
-                      <div class="person">
-                        <img class="person__avatar" src="#" alt="avatar" />
-                        <div class="person__data">
-                          <h5 class="person__name">
+                      <div class="author">
+                        <img
+                          class="author__avatar"
+                          src="./assets/img/peoples/mini_wooman1.png"
+                          alt="avatar"
+                        />
+                        <div class="author__data">
+                          <h5 class="author__name">
                             Константинопольский Константин Константинович
                           </h5>
-                          <span class="person__position"
+                          <span class="author__position"
                             >Главный врач клиники, психиатр-нарколог</span
                           >
-                          <span class="person__experience"
+                          <span class="author__experience"
                             >Опыт работы: 13 лет</span
                           >
                         </div>
@@ -599,7 +815,7 @@
                       >
                       <button class="btn secondary">+</button>
                     </div>
-                    <div class="accardion-content">
+                    <div class="accardion__content">
                       <p>
                         Клиника работает на основании медицинской лицензии и
                         всех необходимых разрешений. Работаем с пациентами на
@@ -608,16 +824,20 @@
                         здоровья.
                       </p>
                       <div class="divider"></div>
-                      <div class="person">
-                        <img class="person__avatar" src="#" alt="avatar" />
-                        <div class="person__data">
-                          <h5 class="person__name">
+                      <div class="author">
+                        <img
+                          class="author__avatar"
+                          src="./assets/img/peoples/mini_wooman1.png"
+                          alt="avatar"
+                        />
+                        <div class="author__data">
+                          <h5 class="author__name">
                             Константинопольский Константин Константинович
                           </h5>
-                          <span class="person__position"
+                          <span class="author__position"
                             >Главный врач клиники, психиатр-нарколог</span
                           >
-                          <span class="person__experience"
+                          <span class="author__experience"
                             >Опыт работы: 13 лет</span
                           >
                         </div>
@@ -634,7 +854,7 @@
                       >
                       <button class="btn secondary">+</button>
                     </div>
-                    <div class="accardion-content">
+                    <div class="accardion__content">
                       <p>
                         Клиника работает на основании медицинской лицензии и
                         всех необходимых разрешений. Работаем с пациентами на
@@ -643,16 +863,20 @@
                         здоровья.
                       </p>
                       <div class="divider"></div>
-                      <div class="person">
-                        <img class="person__avatar" src="#" alt="avatar" />
-                        <div class="person__data">
-                          <h5 class="person__name">
+                      <div class="author">
+                        <img
+                          class="author__avatar"
+                          src="./assets/img/peoples/mini_wooman1.png"
+                          alt="avatar"
+                        />
+                        <div class="author__data">
+                          <h5 class="author__name">
                             Константинопольский Константин Константинович
                           </h5>
-                          <span class="person__position"
+                          <span class="author__position"
                             >Главный врач клиники, психиатр-нарколог</span
                           >
-                          <span class="person__experience"
+                          <span class="author__experience"
                             >Опыт работы: 13 лет</span
                           >
                         </div>
@@ -666,11 +890,11 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer__inner container">
         <div class="footer__part">
-          <div class="logo">
-            <img src="#" alt="green logotype" />
+          <div class="logo large">
+            <img src="./assets/logo.png" alt="green logotype" />
             <h1>
               <span class="sitename">АкваМед</span>
               <span class="slogan">Клиника капельниц</span>
@@ -679,7 +903,7 @@
           <div class="search">
             <input type="text" placeholder="Поиск по сайту" />
             <button class="btn clean">
-              <img src="#" alt="search" />
+              <img src="./assets/icons/search.svg" alt="search" />
             </button>
           </div>
           <button class="btn primary">Капельница на дому</button>
@@ -688,29 +912,34 @@
               <ul class="social__list">
                 <li class="social__item">
                   <a href="#" class="btn secondary">
-                    <img src="#" alt="vk" />
+                    <img src="./assets/icons/social/vk.svg" alt="vk" />
                   </a>
                 </li>
                 <li class="social__item">
                   <a href="#" class="btn secondary">
-                    <img src="#" alt="telegram" />
+                    <img
+                      src="./assets/icons/social/telegram.svg"
+                      alt="telegram"
+                    />
                   </a>
                 </li>
                 <li class="social__item">
                   <a href="#" class="btn secondary">
-                    <img src="#" alt="ok" />
+                    <img src="./assets/icons/social/ok.svg" alt="ok" />
                   </a>
                 </li>
               </ul>
             </div>
             <button class="btn clean">
-              <img src="#" alt="eye" />
+              <img src="./assets/icons/eye.svg" alt="eye" />
             </button>
           </div>
-          <a href="#">Карта сайта</a>
-          <a href="#">Политика конфиденциальности</a>
-          <p>© 2025 Все права защищены</p>
-          <p>
+          <a class="link sitemap mobile-hide" href="#">Карта сайта</a> <br />
+          <a class="link politika mobile-hide" href="#"
+            >Политика конфиденциальности</a
+          >
+          <p class="copyright mobile-hide">© 2025 Все права защищены</p>
+          <p class="label mobile-hide">
             Официальный медицинский сайт клиники капельниц и инфузионной терапии
             «Аквамед» в Москве.
           </p>
@@ -797,9 +1026,9 @@
                     <ul class="contact__list">
                       <li class="contact__item">
                         <div class="phone">
-                          <img src="#" alt="phone" />
+                          <img src="./assets/icons/phone.svg" alt="phone" />
                           <div class="phone__inner">
-                            <span class="label">Поддержка 24/7</span>
+                            <span class="label">Телефон</span>
                             <a href="tel:+78008899999" class="content"
                               >+7 (800) 889-99-99</a
                             >
@@ -808,7 +1037,7 @@
                       </li>
                       <li class="contact__item">
                         <div class="adress">
-                          <img src="#" alt="adress" />
+                          <img src="./assets/icons/geo.svg" alt="adress" />
                           <div class="adress__inner">
                             <span class="label">Адрес</span>
                             <a
@@ -821,8 +1050,8 @@
                       </li>
                       <li class="contact__item">
                         <div class="email">
-                          <img src="#" alt="email" />
-                          <div class="phone__inner">
+                          <img src="./assets/icons/email.svg" alt="email" />
+                          <div class="email__inner">
                             <span class="label">Электронная почта</span>
                             <a
                               href="mailto:info@kapelnica-med.ru"
@@ -834,7 +1063,7 @@
                       </li>
                       <li class="contact__item">
                         <div class="schedule">
-                          <img src="#" alt="schedule" />
+                          <img src="./assets/icons/time.svg" alt="schedule" />
                           <div class="schedule__inner">
                             <span class="label">Время работы</span>
                             <span class="content">Круглосуточно</span>
@@ -847,7 +1076,16 @@
               </li>
             </ul>
           </div>
-          <p>
+          <a class="link sitemap mobile-show" href="#">Карта сайта</a> <br />
+          <a class="link politika mobile-show" href="#"
+            >Политика конфиденциальности</a
+          >
+          <p class="copyright mobile-show">© 2025 Все права защищены</p>
+          <p class="label mobile-show">
+            Официальный медицинский сайт клиники капельниц и инфузионной терапии
+            «Аквамед» в Москве.
+          </p>
+          <p class="disclaimer">
             Сайт носит исключительно информационный характер и не является
             публичной офертой. Консультационные услуги, оказываемые по телефону,
             мессенджерам и в соцсетях носят исключительно информационный
@@ -855,11 +1093,11 @@
             оказывается в домашних условиях по адресу и месту нахождения
             пациента и месту вызова врача.
           </p>
-          <p>
+          <p class="inn">
             Медицинские услуги оказываются по лицензии клиники-партнера ООО
             «Кристалл» Л041-01148-78/00347913 ИНН: 7811740190
           </p>
-          <p>
+          <p class="adress">
             Адрес оказания медицинских услуг в стационаре : 192148, Россия. г.
             Санкт-Петербург, улица Седова, дом 37, литер А, помещение 20-Н.
             21-Н, офис 17
@@ -868,6 +1106,6 @@
       </div>
     </footer>
   </body>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="scripts/script.js"></script>
 </html>
