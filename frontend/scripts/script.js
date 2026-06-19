@@ -209,18 +209,25 @@ document.addEventListener("DOMContentLoaded", function () {
         payload.email = emailInput.value.trim();
       }
 
-      fetch("/api/send-form", {
+      fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       })
         .then(function (res) {
-          if (res.ok) {
-            form.reset();
-            showModal("success");
-          } else {
-            showModal("error");
-          }
+          return res.text().then(function (text) {
+            var data;
+            try { data = JSON.parse(text); } catch (e) { data = {}; }
+
+            if (res.ok) {
+              form.reset();
+              showModal("success");
+            } else if (res.status === 409) {
+              alert("Форма уже отправлена");
+            } else {
+              showModal("error");
+            }
+          });
         })
         .catch(function () {
           showModal("error");

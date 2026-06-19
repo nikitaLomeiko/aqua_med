@@ -4,6 +4,11 @@
 
 ## _Автор_: Ломейко Никита
 
+### For PROD
+
+/backend/config.ini - конфиг для подключения к бд
+/frontend/scripts/config.js - урл запроса
+
 ### For DEV
 
 _Настройка Sass-компилятора_
