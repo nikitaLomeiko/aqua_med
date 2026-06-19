@@ -116,11 +116,37 @@
               <li class="nav__item">
                 <a href="#" class="btn secondary active">Услуги</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item dropdown-nav__item">
                 <button class="btn secondary dropdown">
                   <span>О клинике</span>
                   <img src="./assets/icons/arrow_down.svg" alt="arrow down" />
                 </button>
+                <div class="dropdown-nav">
+                  <ul class="dropdown-nav__list">
+                    <li>
+                      <a href="#">Медикаментозные капельницы (препараты)</a>
+                    </li>
+                    <li class="dropdown-nav__has-sub">
+                      <a href="#">
+                        <span>Инфузионная терапия</span>
+                      </a>
+                      <ul class="dropdown-nav__sub">
+                        <li><a href="#">Капельница на дому</a></li>
+                        <li><a href="#">Капельница для печени</a></li>
+                        <li><a href="#">Капельницы для сосудов</a></li>
+                        <li>
+                          <a href="#">Капельницы при отравлении алкоголем</a>
+                        </li>
+                        <li><a href="#">Капельница для сердца</a></li>
+                        <li><a href="#">Капельница при стрессе</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Капельницы красоты</a></li>
+                    <li><a href="#">Комплексные инфузионные программы</a></li>
+                    <li><a href="#">Диагностика и анализы</a></li>
+                    <li><a href="#">Другие услуги</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="nav__item">
                 <a href="#" class="btn secondary">Цены</a>
@@ -137,12 +163,207 @@
             </ul>
           </nav>
           <div class="actions">
-            <button class="btn secondary">Записаться</button>
-            <button class="btn primary">Капельница на дому</button>
+            <button class="btn secondary" data-modal="form">Записаться</button>
+            <button class="btn primary" data-modal="form">
+              Капельница на дому
+            </button>
             <button class="btn secondary burger">
               <span></span>
               <span></span>
             </button>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu__inner">
+          <div class="mobile-menu__top">
+            <div class="mobile-menu__search">
+              <input type="text" placeholder="Поиск по сайту" />
+              <button class="btn clean">
+                <img src="./assets/icons/search.svg" alt="search" />
+              </button>
+            </div>
+            <button class="btn primary" data-modal="form">
+              Бесплатная консультация
+            </button>
+          </div>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item mobile-menu__accordion">
+                <button class="btn secondary mobile-menu__accordion-btn">
+                  <span>Услуги</span>
+                  <img src="./assets/icons/arrow_down.svg" alt="" />
+                </button>
+                <div class="mobile-menu__accordion-content">
+                  <div class="mobile-menu__nested-group">
+                    <button class="mobile-menu__nested-btn btn secondary">
+                      <span>Инфузионная терапия</span>
+                      <img src="./assets/icons/arrow_down.svg" alt="" />
+                    </button>
+                    <div class="mobile-menu__nested-content">
+                      <a href="#">Капельница на дому</a>
+                      <a href="#">Капельница на дому</a>
+                      <a href="#">Капельница на дому</a>
+                    </div>
+                  </div>
+                  <div class="mobile-menu__nested-group">
+                    <button class="mobile-menu__nested-btn btn secondary">
+                      <span>Капельницы красоты</span>
+                      <img src="./assets/icons/arrow_down.svg" alt="" />
+                    </button>
+                    <div class="mobile-menu__nested-content">
+                      <a href="#">Капельница на дому</a>
+                      <a href="#">Капельница на дому</a>
+                      <a href="#">Капельница на дому</a>
+                    </div>
+                  </div>
+                  <div class="mobile-menu__nested-group">
+                    <button class="mobile-menu__nested-btn btn secondary">
+                      <span>Комплексные инфузионные программы</span>
+                      <img src="./assets/icons/arrow_down.svg" alt="" />
+                    </button>
+                    <div class="mobile-menu__nested-content">
+                      <a href="#">Капельница на дому</a>
+                      <a href="#">Капельница на дому</a>
+                      <a href="#">Капельница на дому</a>
+                    </div>
+                  </div>
+                  <div class="mobile-menu__nested-group">
+                    <button class="mobile-menu__nested-btn btn secondary">
+                      <span>Диагностика и анализы</span>
+                      <img src="./assets/icons/arrow_down.svg" alt="" />
+                    </button>
+                    <div class="mobile-menu__nested-content">
+                      <a href="#">Капельница на дому</a>
+                      <a href="#">Капельница на дому</a>
+                      <a href="#">Капельница на дому</a>
+                    </div>
+                  </div>
+                  <div class="mobile-menu__nested-group">
+                    <button class="mobile-menu__nested-btn btn secondary">
+                      <span>Другие услуги</span>
+                      <img src="./assets/icons/arrow_down.svg" alt="" />
+                    </button>
+                    <div class="mobile-menu__nested-content">
+                      <a href="#">Капельница на дому</a>
+                      <a href="#">Капельница на дому</a>
+                      <a href="#">Капельница на дому</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="mobile-menu__item mobile-menu__accordion">
+                <button
+                  class="btn secondary mobile-menu__accordion-btn btn secondary"
+                >
+                  <span>О клинике</span>
+                  <img src="./assets/icons/arrow_down.svg" alt="" />
+                </button>
+                <div class="mobile-menu__accordion-content">
+                  <a href="#">О нас</a>
+                  <a href="#">Специалисты</a>
+                  <a href="#">Отзывы</a>
+                  <a href="#">Фотогалерея</a>
+                  <a href="#">Цены</a>
+                  <a href="#">Акции</a>
+                  <a href="#">Статьи</a>
+                  <a href="#">Ответы на вопросы</a>
+                  <a href="#">Лицензии</a>
+                </div>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="btn secondary">Цены</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="btn secondary">Врачи</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="btn secondary">Контакты</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="btn secondary">Статьи</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <div class="phone">
+                <img src="./assets/icons/phone.svg" alt="phone" />
+                <div class="phone__inner">
+                  <span class="label">Телефон</span>
+                  <a href="tel:+78008899999" class="content"
+                    >+7 (800) 889-99-99</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="contact__item">
+              <div class="adress">
+                <img src="./assets/icons/geo.svg" alt="adress" />
+                <div class="adress__inner">
+                  <span class="label">Адрес</span>
+                  <a href="https://yandex.ru/maps/-/CPxonMiz" class="content"
+                    >Санкт-Петербург, ул. Авиаконструкторов 45к1</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="contact__item">
+              <div class="email">
+                <img src="./assets/icons/email.svg" alt="email" />
+                <div class="email__inner">
+                  <span class="label">Электронная почта</span>
+                  <a href="mailto:info@kapelnica-med.ru" class="content"
+                    >info@kapelnica-med.ru</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="contact__item">
+              <div class="schedule">
+                <img src="./assets/icons/time.svg" alt="schedule" />
+                <div class="schedule__inner">
+                  <span class="label">Время работы</span>
+                  <span class="content">Круглосуточно</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="btn secondary">
+                  <img
+                    src="./assets/icons/social/vk.svg"
+                    alt="vk"
+                    class="img-vk"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="btn secondary">
+                  <img
+                    class="img-telegram"
+                    src="./assets/icons/social/telegram.svg"
+                    alt="telegram"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="btn secondary">
+                  <img
+                    class="img-ok"
+                    src="./assets/icons/social/ok.svg"
+                    alt="ok"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <button class="btn clean">
+                  <img src="./assets/icons/eye.svg" alt="eye" />
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -225,8 +446,12 @@
               </ul>
             </div>
             <div class="bottom-actions">
-              <button class="btn primary">Подобрать капельницу</button>
-              <button class="btn secondary">Бесплатная консультация</button>
+              <button class="btn primary" data-modal="form">
+                Подобрать капельницу
+              </button>
+              <button class="btn secondary" data-modal="form">
+                Бесплатная консультация
+              </button>
             </div>
           </div>
         </div>
@@ -324,8 +549,8 @@
             >
 
             <form class="callback__form">
-              <input type="text" placeholder="Ваше имя" />
-              <input type="text" placeholder="Ваш номер телефона" />
+              <input type="text" placeholder="Ваше имя" name="name" />
+              <input type="tel" placeholder="+7 999 999 99 99" name="phone" />
               <input
                 class="btn submit"
                 type="submit"
@@ -906,7 +1131,9 @@
               <img src="./assets/icons/search.svg" alt="search" />
             </button>
           </div>
-          <button class="btn primary">Капельница на дому</button>
+          <button class="btn primary" data-modal="form">
+            Капельница на дому
+          </button>
           <div class="footer__buttons">
             <div class="social">
               <ul class="social__list">
@@ -1105,6 +1332,69 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-overlay" data-modal="form">
+      <div class="modal">
+        <button class="modal__close" type="button">
+          <img src="./assets/icons/cross.svg" alt="cross" />
+        </button>
+        <div class="modal__content">
+          <h3 class="modal__title">
+            Не знаете какая капельница или процедура вам подойдет?
+          </h3>
+          <span class="modal__description"
+            >Оставьте заявку, наш специалист перезвонит вам и бесплатно
+            проконсультирует вас</span
+          >
+          <form class="modal__form">
+            <input type="text" placeholder="Ваше имя" name="name" />
+            <input type="tel" placeholder="+7 999 999 99 99" name="phone" />
+            <input class="btn submit" type="submit" value="Отправить заявку" />
+            <label class="checkbox">
+              <input type="checkbox" />
+              <div class="checkbox__border">
+                <span class="checkbox__custom"></span>
+              </div>
+              <span class="checkbox__text">
+                Нажимая кнопку я соглашаюсь с
+                <a href="#"
+                  >политикой конфединциальности и пользовательским
+                  соглашением</a
+                >
+              </span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay open" id="modal-success">
+      <div class="modal modal--status">
+        <div class="modal__content">
+          <div class="success">
+            <img src="./assets/icons/verify.svg" alt="cross" />
+          </div>
+          <h3 class="modal__title">Заявка успешно отправлена</h3>
+          <button class="btn submit modal__status-btn" type="button">
+            Хорошо
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-error">
+      <div class="modal modal--status">
+        <div class="modal__content">
+          <div class="cross">
+            <img src="./assets/icons/cross.svg" alt="cross" />
+          </div>
+          <h3 class="modal__title">Произошла какая-то ошибка</h3>
+          <button class="btn submit modal__status-btn" type="button">
+            Повторить попытку
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="scripts/script.js"></script>
