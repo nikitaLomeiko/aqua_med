@@ -1244,7 +1244,7 @@ body.menu-open {
 .intro {
   background-color: rgb(245, 248, 245);
   position: relative;
-  padding: 65px 0;
+  padding: 58.5px 0;
   overflow: hidden;
 }
 .intro .background,
@@ -1421,6 +1421,11 @@ body.menu-open {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .intro__cards .card__list {
+    gap: 10px !important;
+  }
+}
 .intro .bottom-actions {
   margin-top: 60px;
   display: flex;
@@ -1497,6 +1502,7 @@ body.menu-open {
 }
 @media (max-width: 768px) {
   .intro__title {
+    margin-top: -10px;
     font-size: 30px;
     margin-bottom: 15px;
   }
@@ -1550,6 +1556,14 @@ body.menu-open {
   }
 }
 
+.info {
+  margin-top: 110px;
+}
+@media (max-width: 1240px) {
+  .info {
+    margin-top: -20px;
+  }
+}
 .info__inner {
   background: url("../../assets/img/bg/bg_circles.png");
   background-size: contain;
@@ -1697,10 +1711,16 @@ body.menu-open {
 }
 
 .callback {
+  margin-top: 93px;
   position: relative;
   background-color: rgb(0, 120, 68);
   height: 593px;
   overflow: hidden;
+}
+@media (max-width: 1240px) {
+  .callback {
+    margin-top: -25px;
+  }
 }
 .callback__inner {
   display: flex;
@@ -2065,7 +2085,7 @@ body.menu-open {
 }
 @media (max-width: 1180px) {
   .text-block {
-    margin-top: 100px;
+    margin-top: 78px;
   }
   .text-block__title {
     font-size: 32px;
@@ -2079,13 +2099,18 @@ body.menu-open {
 }
 
 .licenses {
-  margin-top: 200px;
+  margin-top: 220px;
   background-color: #ffffff;
   overflow: hidden;
 }
+@media (max-width: 1240px) {
+  .licenses {
+    margin-top: 200px;
+  }
+}
 @media (max-width: 768px) {
   .licenses {
-    margin-top: 80px;
+    margin-top: 0px;
   }
 }
 .licenses__inner {

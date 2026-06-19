@@ -1353,7 +1353,7 @@ body.menu-open {
 .intro {
   background-color: rgba(245, 248, 245, 1);
   position: relative;
-  padding: 65px 0;
+  padding: 58.5px 0;
   overflow: hidden;
 
   .background,
@@ -1553,6 +1553,12 @@ body.menu-open {
         }
       }
     }
+
+    @media (max-width: 768px) {
+      .card__list {
+        gap: 10px !important;
+      }
+    }
   }
 
   .bottom-actions {
@@ -1648,6 +1654,7 @@ body.menu-open {
 
   @media (max-width: 768px) {
     &__title {
+      margin-top: -10px;
       font-size: 30px;
       margin-bottom: 15px;
     }
@@ -1712,6 +1719,11 @@ body.menu-open {
 }
 
 .info {
+  margin-top: 110px;
+
+  @media (max-width: 1240px) {
+    margin-top: -20px;
+  }
   &__inner {
     background: url("../../assets/img/bg/bg_circles.png");
     background-size: contain;
@@ -1885,10 +1897,15 @@ body.menu-open {
 }
 
 .callback {
+  margin-top: 93px;
   position: relative;
   background-color: rgba(0, 120, 68, 1);
   height: 593px;
   overflow: hidden;
+
+  @media (max-width: 1240px) {
+    margin-top: -25px;
+  }
 
   &__inner {
     display: flex;
@@ -2328,7 +2345,7 @@ body.menu-open {
   }
 
   @media (max-width: 1180px) {
-    margin-top: 100px;
+    margin-top: 78px;
     &__title {
       font-size: 32px;
     }
@@ -2343,12 +2360,16 @@ body.menu-open {
 }
 
 .licenses {
-  margin-top: 200px;
+  margin-top: 220px;
   background-color: #ffffff;
   overflow: hidden;
 
+  @media (max-width: 1240px) {
+    margin-top: 200px;
+  }
+
   @media (max-width: 768px) {
-    margin-top: 80px;
+    margin-top: 00px;
   }
 
   &__inner {
